@@ -1,0 +1,68 @@
+h1{
+    font-family:"Courier New", Courier, monospace;
+    text-align: center;
+}
+
+.blanco{
+    color: white;
+}
+
+#tablaPais{
+    width: 50%;
+}
+
+.menu{
+    width: 150px;
+}
+
+#numPasajeros{
+    margin-right: 25%;
+    width: 400px;
+    float:right;
+}
+
+#fechas{
+    position: relative;
+    top:12px;
+    width: 50%;
+}
+
+#upText{
+    position: relative;
+    top: -15px;
+}
+
+select {
+      width: 70px;
+}
+
+.ui-effects-transfer { border: 5px dotted red; }
+
+.draggable { 
+    width: 20%; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: left; 
+    margin: 10px 10px 10px 0; 
+    border-style: solid;
+    background-color: #BCE0FD;
+    font-size: 0.8em;
+}
+
+#droppable { 
+    width: 150px; 
+    height: 150px; 
+    padding: 0.5em; 
+    float: right; 
+    margin: 10px; 
+    position: relative
+    z-index: 20;
+}
+
+#tabs{
+    float:right;
+}
+
+body{
+    background-image: url("images/avion.jpg");
+}

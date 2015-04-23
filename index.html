@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <link href="jquery-ui.structure.min.css" rel="stylesheet">
+    <link href="jquery-ui.theme.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <script src="jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="index.js"></script>
+	<script src="jquery-ui.min.js"></script>
+</head>
+<body>
+    <div id="droppable" class="ui-widget-header">
+        <h3>Cesta</h3>           
+        <p>Arrastrar aquí el viaje escogido</p>
+        <div id="dialog" title="Viaje escogido">
+            No se ha escogido ningun viaje
+        </div>
+        <button id="BTNelegido" type="button">Ver contenido</button> 
+    </div>
+
+    <h1 class="blanco">TE AYUDAMOS A BUSCAR TU VIAJE!</h1>
+
+    <div id="numPasajeros" class ="blanco">
+        <label id="upText" for="number">Seleciona el número de pasajeros:</label>
+        <select name="number" id="number">
+          <option>1</option>
+          <option selected="selected">2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+    </div>
+    <div id="fechas" class="blanco">
+        <p> Elige las fechas de tu vuelo:</p>
+        <p>Fecha salida:<br><input type="text" id="fechaSalida" class="datepicker"></p>
+        <p>Fecha vuelta:<br><input title="No rellene este apartado si es un viaje sólo de ida." type="text" id="fechaVuelta" class="datepicker"></p>
+    </div>
+    <div id="Pais">
+        <table id="tablaPais">
+            <tr>
+                <td>
+                    <p class ="blanco">Elige tu país de origen:<p>
+                    <ul class="menu">
+                        <li class="ui-state-disabled">Continente</li>
+                        <li>Europa
+                            <ul>
+                                <li class="ui-state-disabled">País</li>
+                                <li class="Spain">España</li>
+                                <li class="Francia">Francia</li>
+                                <li class="Inglaterra">Inglaterra</li>
+                                <li class="Portugal">Portugal</li>
+                            </ul>
+                        </li>
+                        <li>América
+                            <ul>
+                                <li class="ui-state-disabled">País</li>
+                                <li class="Brasil">Brasil</li>
+                                <li class="Canada">Canadá</li>
+                                <li class="EEUU">Estados Unidos</li>
+                                <li class="Mexico">México</li>
+                            </ul>
+                        </li>
+                        <li>Asia
+                            <ul>
+                                <li class="ui-state-disabled">País</li>
+                                <li class="China">China</li>
+                                <li class="India">India</li>
+                                <li class="Rusia">Rusia</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="blanco ui-widget">
+                      <label for="tags">Ciudad de origen (autocomplete): </label>
+                      <input id="ciudadOrigen" title="Empieza a escribir la ciudad y te daremos los origenes que ofrecemos. Escribir país elegido para ver posibilidades" class="tags">
+                    </div>
+                </td>
+                <td>
+                    <p class ="blanco">Elige tu país de destino:<p>
+                    <ul class="menu">
+                        <li class="ui-state-disabled">Continente</li>
+                        <li>Europa
+                            <ul>
+                                <li class="ui-state-disabled">País</li>
+                                <li class="Spain">España</li>
+                                <li class="Francia">Francia</li>
+                                <li class="Inglaterra">Inglaterra</li>
+                                <li class="Portugal">Portugal</li>
+                            </ul>
+                        </li>
+                        <li>América
+                            <ul>
+                                <li class="ui-state-disabled">País</li>
+                                <li class="Brasil">Brasil</li>
+                                <li class="Canada">Canadá</li>
+                                <li class="EEUU">Estados Unidos</li>
+                                <li class="Mexico">México</li>
+                            </ul>
+                        </li>
+                        <li>Asia
+                            <ul>
+                                <li class="ui-state-disabled">País</li>
+                                <li class="China">China</li>
+                                <li class="India">India</li>
+                                <li class="Rusia">Rusia</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div  class="blanco ui-widget">
+                      <label for="tags">Ciudad de destino (autocomplete): </label>
+                      <input id="ciudadDestino" title="Empieza a escribir la ciudad y te daremos los destinos que ofrecemos. Escribir país elegido para ver posibilidades" class="tags">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <button id="BTNelegir" type="button">Elegir Trayecto!</button> 
+    </div>
+    
+    <div id="revertible" class="draggable" class="ui-widget-content" title="Arrastrar a la cesta para terminar."></div>
+    
+    <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">Check-in</a></li>
+        <li><a href="#tabs-2">Tus reservas</a></li>
+        <li><a href="#tabs-3">Estado vuelos</a></li>
+        <li><a href="#tabs-4">Ofertas</a></li>
+      </ul>
+      <div id="tabs-1">
+        <p>Aquí se realizará el check-in</p>
+      </div>
+      <div id="tabs-2">
+        <p>Aquí se accederá a mis reservas</p>
+      </div>
+      <div id="tabs-3">
+        <p>Aquí podré ver el estado de todos los vuelos</p>
+      </div>
+      <div id="tabs-4">
+        <p>Aquí tendré un listado de ofertas.</p>
+      </div>
+    </div>
+
+</body>
+</html>
